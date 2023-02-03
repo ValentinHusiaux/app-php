@@ -1,8 +1,9 @@
-node {
-  
-    stage('Version') {
-     sh 'docker-compose version'
-  }
-
+pipeline {
+    stages {
+        stage('Build') {
+            steps {
+                sh 'docker-compose up -d'
+            }
+        }
+    }
 }
-
