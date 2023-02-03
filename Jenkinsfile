@@ -2,8 +2,7 @@ node {
 
  stage('Install Sudo') {
         
-                sh 'apt-get update && apt-get install -y sudo'
-        
+        	  sh 'yum install sudo -y' 
         }
 
 
