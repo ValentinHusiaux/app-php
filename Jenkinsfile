@@ -1,13 +1,8 @@
 node {
   
-  stages {
-        stage('Start Docker Compose') {
-                sh '''
-                    echo "Starting Docker Compose"
-                    docker-compose up -d
-                '''
+  stage('Start Docker Compose') {
+      sh 'docker-compose up -d'
         }
-    }
 
   
   
