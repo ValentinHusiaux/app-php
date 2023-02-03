@@ -1,8 +1,19 @@
 node {
 
+  stage('Install yum') {
+                sh '''
+                    echo "Updating the system"
+                    yum update -y
+
+                    echo "Installing yum"
+                    yum install -y yum-utils
+                '''
+            }
+ 
+ 
  stage('Install Sudo') {
         
-        	  sh 'dnf install sudo -y'
+        	  sh 'yum install sudo -y'
         }
 
 
