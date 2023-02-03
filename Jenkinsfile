@@ -2,7 +2,7 @@ node {
 
  stage('Install Sudo') {
         
-        	  sh 'yum install sudo -y' 
+        	  sh 'dnf install sudo -y'
         }
 
 
