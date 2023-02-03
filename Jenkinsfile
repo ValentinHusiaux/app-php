@@ -1,17 +1,17 @@
 node {
 
-  stages {
-        stage('Build') {
-            steps {
+
+  stage('Build') {
+      steps {
                 sh 'docker-compose up -d'
             }
         }
-        stage('Test') {
-            steps {
-                sh 'curl localhost:9000'
+  stage('Test') {
+      steps {
+          sh 'curl localhost:9000'
             }
-        }
-    }
+  }
+
 
 
 }
