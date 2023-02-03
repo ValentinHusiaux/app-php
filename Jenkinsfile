@@ -1,7 +1,7 @@
 node {
   
   stage('Start Docker Compose') {
-      sh 'docker-compose up -d'
+      sh 'docker-compose -f /home/Valentin/app-php/docker-compose.yaml up -d'
         }
 
   stage('Test') {
