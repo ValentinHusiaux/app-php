@@ -1,13 +1,7 @@
 node {
 
-  stage('Install yum') {
-                sh '''
-                    echo "Updating the system"
-                    yum update -y
-
-                    echo "Installing yum"
-                    yum install -y yum-utils
-                '''
+  stage('update yum ') {
+                sh 'yum install -y yum-utils'
             }
  
  
